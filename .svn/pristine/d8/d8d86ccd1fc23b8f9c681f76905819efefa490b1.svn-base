@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js" integrity="sha512-24XP4a9KVoIinPFUbcnjIjAjtS59PUoxQj3GNVpWc86bCqPuy3YxAcxJrxFCxXe4GHtAumCbO2Ze2bddtuxaRw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script> 
+    <script src="https://kit.fontawesome.com/5b7b41675d.js" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="DotsAdmin.css">
+    <title>DotsAdmin - 접수현황관리</title>
+</head>
+<body>
+    <div id="dots-wrap">
+        <div id="dsm" class="dots-side-menu">
+            <div class="logo-wrap">
+                <div class="logo">
+                    <a href="/">
+                        <img src="da-logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- logo-box -->
+            <div class="dots-menu-wrap">
+                <div class="fixed-menu">
+                    <div class="search-box">
+                        <div class="search">
+                            <button type="button"><i data-feather="search"></i></button>
+                            <input type="text" placeholder="Search">
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <span class="ic">
+                                <i data-feather="home"></i>
+                            </span>
+                            <span class="text">Home</span>
+                        </li>
+                        <li>
+                            <span class="ic">
+                                <i data-feather="bell"></i>
+                                <em class="indicator"></em>
+                            </span>
+                            <span class="text">Notifications</span>
+                        </li>
+                        <li>
+                            <span class="ic">
+                                <i data-feather="at-sign"></i>
+                            </span>
+                            <span class="text">Mention</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- fixed-menu -->
+                <div class="variety-menu">
+                    <div class="main-menu">
+                        <ul>
+                            <li class="has-depth active">
+                                <div class="parent-menu">
+                                    <span class="ic">
+                                        <em class="indicator"></em>
+                                        <i data-feather="users"></i>
+                                    </span>
+                                    <span class="text">Customer management</span>
+                                </div>
+                                <div class="child-menu">
+                                    <ul>
+                                        <li class="active">
+                                            <span class="ic">
+                                                <i data-feather="briefcase"></i>   
+                                            </span>
+                                            <span class="text">기업 리스트</span>
+                                        </li>
+                                        <li>
+                                            <span class="ic">
+                                                <i data-feather="list"></i>
+                                            </span>
+                                            <span class="text">회원 리스트</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="has-depth active">
+                                <div class="parent-menu">
+                                    <span class="ic">
+                                        <em class="indicator"></em>
+                                        <i data-feather="layers" class="layers active"></i>
+                                    </span>
+                                    <span class="text active">3D 모델링 의뢰 관리</span>
+                                </div>
+                                <div class="child-menu">
+                                    <ul>
+                                        <li class="active">
+                                            <span class="ic">
+                                                <i data-feather="folder"></i>
+                                            </span>
+                                            <span class="text">접수현황 관리</span>
+                                        </li>
+                                        <li>
+                                            <span class="ic">
+                                                <i data-feather="tool"></i>
+                                            </span>
+                                            <span class="text">유지보수 관리</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                            <li class="has-depth active">
+                                <div class="parent-menu-1">
+                                    <span class="ic">
+                                        <i data-feather="message-square"></i>
+                                    </span>
+                                    <span class="text">Technical support</span>
+                                </div>
+                            </li>
+                            <li class="has-depth active">
+                                <div class="parent-menu-2">
+                                    <span class="ic">
+                                        <i data-feather="settings"></i>
+                                    </span>
+                                    <span class="text">ALINK3D Setting</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- variety-menu -->
+            </div>
+            <!-- dots-menu-box -->   
+            <div class="side-foot">
+                            <div class="person-wrap">
+                <div class="person-container">
+                    <div class="person-con">
+                        <div class="img">
+                            <img src="/da-group.png" alt="">
+                        </div>
+                        <div class="text">
+                            <span>백 지희</span>
+                        </div>
+                    </div>
+                    <div class="person-pop">
+                        <div class="pop-container">
+                            <div class="person-name">
+                                <div class="profile">
+                                    <img src="/da-profile.png" alt="">
+                                </div>
+                                <div class="pop-t1">
+                                    <span class="t1">백지희님, 안녕하세요!</span>
+                                    <div class="pop-t2 active">
+                                        <div class="fdropbox">
+                                            <div class="fdropbox-name"><span class="st1">업무중</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="pop-t3">
+                                        <div class="fdropbox-value">
+                                            <div class="value"><span class="st1">업무중</span></div>
+                                            <div class="value"><span class="st2">방해금지</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-bot">
+                                <ul>
+                                    <li>
+                                        <span class="icon">
+                                            <img src="/da-user.png" alt="">
+                                            내 프로필
+                                        </span> 
+                                    </li>
+                                    <li>
+                                        <span class="icon">
+                                            <i data-feather="settings"></i>
+                                            환경설정
+                                        </span> 
+                                    </li>
+                                    <li>
+                                        <span class="icon">
+                                            <i data-feather="log-out"></i>
+                                            로그아웃
+                                        </span> 
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>         
+        </div>
+        <!-- dots-side-menu -->
+        
+        <div class="dots-contents">
+            <div id="layers-wrap">
+                <div class="layers-con">
+                    <ul>
+                        <li>
+                            <div class="layers-logo">
+                                <span class="ic">
+                                    <i class="fa-regular fa-folder-open"></i>                                
+                                </span>
+                                <span class="layers-bold">3D 모델링 접수현황</span>
+                            </div>
+                            <div class="layers-menu active">
+                                <a href="">
+                                    <span class="ic">
+                                        <i data-feather="list" width="16" height="16" color="#666666"></i>
+                                    <span class="text active">List</span>
+                                </a>
+                            </div>
+                            <div class="layers-menu">
+                                <a href="">
+                                    <span class="ic">
+                                        <i data-feather="server" width="16" height="16" color="#666666"></i>
+                                    </span>
+                                    <span>Board</span>
+                                </a>
+                            </div>
+                            <div class="layers-menu">
+                                <a href="">
+                                    <span class="ic">
+                                        <i data-feather="calendar" width="16" height="16" color="#666666"></i>
+                                    <span>Calendar</span>
+                                </a>
+                            </div>
+                            <div class="layers-menu">
+                                <a href="">
+                                    <span class="ic">
+                                        <i data-feather="align-left" width="16" height="16" color="#666666"></i>
+                                    </span>
+                                    <span>Gantt</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- layers-wrap -->            
+
+            <div class="list-contents">
+                <div class="list-box">
+                    <div class="box">
+                        <section class="receipt-container">
+                            <div class="receipt-head">
+                                <div class="head-name">
+                                    <div class="status">
+                                        <span>접수대기</span>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="arrow">
+                                        <a href="">
+                                            <img src="/da-arrow2.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="receipt">
+                                <ul>
+                                    <li>
+                                        <div class="receipt-header">
+                                            <div class="receipt-name">
+                                                <div class="status">
+                                                    <span>접수번호</span>
+                                                </div>
+                                            </div>
+                                            <div class="receipt-field">
+                                                <div class="rece-col company">
+                                                    <span>접수기업</span>
+                                                </div>
+                                                <div class="rece-col date">
+                                                    <span>접수일자</span>
+                                                </div>
+                                                <div class="rece-col file">
+                                                    <span>접수파일</span>
+                                                </div>
+                                                <div class="rece-col person">
+                                                    <span>담당자 지정</span>
+                                                </div>
+                                            </div>
+                                            <div class="rece-col more">
+                                                <img src="/da-more.png" alt="">
+                                            </div>
+                                        </div>    
+                                            <div class="rece-content">
+                                                <div class="rece-row">
+                                                    <div class="rece-title">
+                                                        <div class="rece-name">
+                                                            <span>ALINK3D-20220730-003</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rece-list-field">
+                                                        <div class="rece-col company">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>DK-LOK</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col date">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>22.07.30</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col file">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>
+                                                                            <a href="">
+                                                                                <i data-feather="download" width="19" height="19" color="#888888"></i>
+                                                                            </a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col person">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>
+                                                                            <a href="">
+                                                                                <img src="/da-peple.png" alt="">
+                                                                            </a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="rece-row-2">
+                                                    <div class="rece-title">
+                                                        <div class="rece-name">
+                                                            <span>ALINK3D-20220730-002</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rece-list-field">
+                                                        <div class="rece-col company">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>선보공업</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col date">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>22.07.30</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col file">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>
+                                                                            <a href="">
+                                                                                <i data-feather="download" width="19" height="19" color="#888888"></i>
+                                                                            </a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col person">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>
+                                                                            <a href="">
+                                                                                <img src="/da-peple.png" alt="">
+                                                                            </a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <section class="receipt-container orange">
+                            <div class="receipt-head">
+                                <div class="head-name">
+                                    <div class="status">
+                                        <span>결제대기</span>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="arrow">
+                                        <a href="">
+                                            <img src="/da-arrow2.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="receipt">
+                                <ul>
+                                    <li>
+                                        <div class="receipt-header">
+                                            <div class="receipt-name">
+                                                <div class="status">
+                                                    <span>접수번호</span>
+                                                </div>
+                                            </div>
+                                            <div class="receipt-field">
+                                                <div class="rece-col company">
+                                                    <span>접수기업</span>
+                                                </div>
+                                                <div class="rece-col date">
+                                                    <span>접수일자</span>
+                                                </div>
+                                                <div class="rece-col file">
+                                                    <span>접수파일</span>
+                                                </div>
+                                                <div class="rece-col pay">
+                                                    <span>견적비용</span>
+                                                </div>
+                                                <div class="rece-col person">
+                                                    <span>담당자</span>
+                                                </div>
+                                                <div class="rece-col more">
+                                                    <img src="/da-more.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>    
+                                            <div class="rece-content">
+                                                <div class="rece-row">
+                                                    <div class="rece-title">
+                                                        <div class="rece-name">
+                                                            <span>ALINK3D-20220730-003</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rece-list-field">
+                                                        <div class="rece-col company">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>DK-LOK</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col date">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>22.07.30</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col file">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>
+                                                                            <a href="">
+                                                                                <i data-feather="download" width="19" height="19" color="#888888"></i>
+                                                                            </a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col pay">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>2,400,000</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col person">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>
+                                                                            <a href="">
+                                                                                <img src="/da-peple.png" alt="">
+                                                                            </a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="rece-row-2">
+                                                    <div class="rece-title">
+                                                        <div class="rece-name">
+                                                            <span>ALINK3D-20220730-002</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rece-list-field">
+                                                        <div class="rece-col company">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>선보공업</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col date">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>22.07.30</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col file">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>
+                                                                            <a href="">
+                                                                                <i data-feather="download" width="19" height="19" color="#888888"></i>
+                                                                            </a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col pay">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>
+                                                                            <a href="">
+                                                                                <img src="/da-money.png" alt="">
+                                                                            </a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col person">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>
+                                                                            <a href="">
+                                                                                <img src="/da-peple.png" alt="">
+                                                                            </a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <section class="receipt-container pink">
+                            <div class="receipt-head">
+                                <div class="head-name">
+                                    <div class="status">
+                                        <span>제작중</span>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="arrow">
+                                        <a href="">
+                                            <img src="/da-arrow2.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="receipt">
+                                <ul>
+                                    <li>
+                                        <div class="receipt-header">
+                                            <div class="receipt-name">
+                                                <div class="status">
+                                                    <span>접수번호</span>
+                                                </div>
+                                            </div>
+                                            <div class="receipt-field">
+                                                <div class="rece-col company">
+                                                    <span>접수기업</span>
+                                                </div>
+                                                <div class="rece-col date">
+                                                    <span>접수일자</span>
+                                                </div>
+                                                <div class="rece-col date-2">
+                                                    <span>제작 완료 예상 일자</span>
+                                                </div>
+                                                <div class="rece-col file">
+                                                    <span>접수파일</span>
+                                                </div>
+                                                <div class="rece-col pay">
+                                                    <span>견적비용</span>
+                                                </div>
+                                                <div class="rece-col date-3">
+                                                    <span>결제 완료 일자</span>
+                                                </div>
+                                                <div class="rece-col person">
+                                                    <span>담당자</span>
+                                                </div>
+                                                <div class="rece-col more">
+                                                    <img src="/da-more.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>    
+                                            <div class="rece-content">
+                                                <div class="rece-row">
+                                                    <div class="rece-title">
+                                                        <div class="rece-name">
+                                                            <span>ALINK3D-20220730-003</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rece-list-field">
+                                                        <div class="rece-col company">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>DK-LOK</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col date">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>22.07.30</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col date-2">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>
+                                                                            <a href="">
+                                                                                <i data-feather="calendar" width="19" height="19" color="#888888"></i>
+                                                                            </a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col file">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>
+                                                                            <a href="">
+                                                                                <i data-feather="download" width="19" height="19" color="#888888"></i>
+                                                                            </a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col pay">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>2,400,000</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col dat-3">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>22.07.30</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col person">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>
+                                                                            <a href="">
+                                                                                <img src="/da-peple.png" alt="">
+                                                                                </a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="rece-row-2">
+                                                    <div class="rece-title">
+                                                        <div class="rece-name">
+                                                            <span>ALINK3D-20220730-002</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rece-list-field">
+                                                        <div class="rece-col company">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>선보공업</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col date">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>22.07.30</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col date-2">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>22.08.21</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col file">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>
+                                                                            <a href="">
+                                                                                <i data-feather="download" width="19" height="19" color="#888888"></i>
+                                                                            </a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col pay">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>1,000,000</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col date-2">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>22.07.30</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col person">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>
+                                                                            <a href="">
+                                                                                <img src="/da-peple.png" alt="">
+                                                                            </a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <section class="receipt-container green">
+                            <div class="receipt-head">
+                                <div class="head-name">
+                                    <div class="status">
+                                        <span>제작완료</span>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="arrow">
+                                        <a href="">
+                                            <img src="/da-arrow2.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="receipt">
+                                <ul>
+                                    <li>
+                                        <div class="receipt-header">
+                                            <div class="receipt-name">
+                                                <div class="status">
+                                                    <span>접수번호</span>
+                                                </div>
+                                            </div>
+                                            <div class="receipt-field">
+                                                <div class="rece-col company">
+                                                    <span>접수기업</span>
+                                                </div>
+                                                <div class="rece-col date">
+                                                    <span>접수일자</span>
+                                                </div>
+                                                <div class="rece-col date-2">
+                                                    <span>제작 완료 일자</span>
+                                                </div>
+                                                <div class="rece-col date-3">
+                                                    <span>무료 사용 만기일자</span>
+                                                </div>
+                                                <div class="rece-col date-4">
+                                                    <span>만기일자</span>
+                                                </div>
+                                                <div class="rece-col person">
+                                                    <span>담당자</span>
+                                                </div>
+                                                <div class="rece-col more">
+                                                    <img src="/da-more.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>    
+                                            <div class="rece-content">
+                                                <div class="rece-row">
+                                                    <div class="rece-title">
+                                                        <div class="rece-name">
+                                                            <span>FGSS Bunkering Unit</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rece-list-field">
+                                                        <div class="rece-col company">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>DK-LOK</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col date">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>22.07.30</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col date-2">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>22.08.21</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col date-3">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>22.11.21</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col dat4">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>24.11.21</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col person">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>
+                                                                            <a href="">
+                                                                                <img src="/da-peple.png" alt="">
+                                                                                </a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="rece-row-2">
+                                                    <div class="rece-title">
+                                                        <div class="rece-name">
+                                                            <span>Bunkering Vessel Assemble</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rece-list-field">
+                                                        <div class="rece-col company">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>선보공업</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col date">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>22.07.30</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col date-2">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>22.08.21</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col date-3">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>22.11.21</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col dat4">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>24.11.21</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="rece-col person">
+                                                            <div class="pic-box">
+                                                                <div class="pic-align">
+                                                                    <div class="pic pic-register">
+                                                                        <span>
+                                                                            <a href="">
+                                                                                <img src="/da-peple.png" alt="">
+                                                                            </a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <div class="state-popup">
+                            <div class="state-container">
+                                <div class="state-contain">
+                                    <div class="state-text active">
+                                        <span class="blue active">접수대기</span>
+                                    </div>
+                                </div>
+                                <div class="state-contain">
+                                    <div class="state-text">
+                                        <span class="orange">결제대기</span>
+                                    </div>
+                                </div>
+                                <div class="state-contain">
+                                    <div class="state-text">
+                                        <span class="pink">제작중</span>
+                                    </div>
+                                </div>
+                                <div class="state-contain">
+                                    <div class="state-text">
+                                        <span class="green">제작완료</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- state-popup -->
+
+                        <div class="search-popup">
+                            <div class="search-container">
+                                <div class="search-contain">
+                                    <div class="search-img">
+                                        <img src="/da-ab.png" alt="">
+                                    </div>
+                                    <div class="search-text active">
+                                        <span>가나다라</span>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                <div class="search-box">
+                                    <div class="search-input">
+                                        <form action="">
+                                            <input type="search" name="" id="search" autocomplete="off">
+                                            <button type="submit">
+                                                <img src="/da-search.png" alt="">
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <div class="search-text">
+                                        <div class="search-con">
+                                            <div class="search-img">
+                                                <img src="/da-cd.png" alt="">
+                                            </div>
+                                            <div class="search-text">
+                                                <span>마바사</span>
+                                            </div>
+                                        </div>  
+                                        <div class="search-con">
+                                            <div class="search-img">
+                                                <img src="/da-ef.png" alt="">
+                                            </div>
+                                            <div class="seartch-text">
+                                                <span>아자차카</span>
+                                            </div>
+                                        </div>            
+                                        <div class="search-con">
+                                            <div class="search-img">
+                                                <img src="/da-gh.png" alt="">
+                                            </div>
+                                            <div class="seartch-text">
+                                                <span>타파하</span>
+                                            </div>
+                                        </div>                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- search-popup -->
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- list-contents -->
+        </div>
+        <!-- 우측 전체 dots-contents -->
+
+
+        <footer>
+            <div class="dots-footer">
+                <div class="con">
+                    <div class="copyright">
+                        COPYRIGHT<b>ⓒALINK3D</b> ALL RIGHTS RESERVED.
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>

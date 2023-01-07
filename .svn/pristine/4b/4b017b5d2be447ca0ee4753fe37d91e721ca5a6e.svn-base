@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js" integrity="sha512-24XP4a9KVoIinPFUbcnjIjAjtS59PUoxQj3GNVpWc86bCqPuy3YxAcxJrxFCxXe4GHtAumCbO2Ze2bddtuxaRw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="DotsAdmin.css">
+    <title>DotsAdmin - 접수현황관리</title>
+</head>
+<body>
+    <div id="dots-wrap">
+        <div id="dsm" class="dots-side-menu">
+            <div class="logo-wrap">
+                <div class="logo">
+                    <a href="/">
+                        <img src="da-logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- logo-box -->
+            <div class="dots-menu-wrap">
+                <div class="fixed-menu">
+                    <div class="search-box">
+                        <div class="search">
+                            <button type="button"><i data-feather="search"></i></button>
+                            <input type="text" placeholder="Search">
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <span class="ic">
+                                <i data-feather="home"></i>
+                            </span>
+                            <span class="text">Home</span>
+                        </li>
+                        <li>
+                            <span class="ic">
+                                <i data-feather="bell"></i>
+                                <em class="indicator"></em>
+                            </span>
+                            <span class="text">Notifications</span>
+                        </li>
+                        <li>
+                            <span class="ic">
+                                <i data-feather="at-sign"></i>
+                            </span>
+                            <span class="text">Mention</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- fixed-menu -->
+                <div class="variety-menu">
+                    <div class="main-menu">
+                        <ul>
+                            <li class="has-depth active">
+                                <div class="parent-menu">
+                                    <span class="ic">
+                                        <em class="indicator"></em>
+                                        <i data-feather="layers"></i>
+                                    </span>
+                                    <span class="text">3D 모델링 의뢰 관리</span>
+                                </div>
+                                <div class="child-menu">
+                                    <ul>
+                                        <li class="active">
+                                            <span class="ic">
+                                                <i data-feather="folder"></i>
+                                            </span>
+                                            <span class="text">접수현황 관리</span>
+                                        </li>
+                                        <li>
+                                            <span class="ic">
+                                                <i data-feather="tool"></i>
+                                            </span>
+                                            <span class="text">유지보수 관리</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="parent-menu">
+                                    <span class="ic">
+                                        <i data-feather="message-square"></i>
+                                    </span>
+                                    <span class="text">Technical support</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- variety-menu -->
+            </div>
+            <!-- dots-menu-box -->            
+        </div>
+        <!-- dots-side-menu -->
+    </div>
+
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>
